@@ -18,7 +18,6 @@ Zero API key required. Works natively inside Claude.ai.
 bugForge/
 ├── index.js
 ├── bugforge_prompt.md
-├── template.json
 ├── package.json
 ├── README.md
 └── LICENSE
