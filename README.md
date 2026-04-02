@@ -30,19 +30,19 @@ bugForge/
 - Claude Desktop app
 
 ## Working
-1. How Does it work ?
+### How Does it work ?
 BugForge works inside LLM-connected MCP clients (like Claude.ai).
 It assembles a structured prompt from your inputs — the host LLM 
 then generates the final defect report automatically. No API key required.
 
-2. How do I install it?
+### How do I install it?
+```
 git clone https://github.com/ervikasti/bugForge.git
 cd bugforge
 npm install
+```
 
-3. How do I connect it to Claude? 
-(User shall refer how there MCP client connect to MCP Server)
-## How to Connect to Claude Desktop
+### How do I connect it to Claude Desktop? 
 
     1. Open your Claude Desktop config file:
     
@@ -64,7 +64,7 @@ npm install
     
     3. Restart Claude Desktop
 
-4. How do I use it ?
+### How do I use it ?
 
 Just describe your bug in Claude:
 
@@ -76,10 +76,10 @@ BugForge will produce a Jira-ready report automatically.
 ### The Customization Section (Differentiator of the project)
 
 ## Customize for Your Project
-
-Edit config/prompt.md to change the report format, tone, or rules.
-Edit config/template.json to add your environments, channels, or 
-team-specific fields.
+```
+Edit bugforge_prompt.md to change the report format, tone, or rules.
+Edit template.json to add your environments, channels, or team-specific fields.
+```
 
 BugForge is built to be adapted — make it yours.
 
