@@ -63,6 +63,23 @@ npm install
     
     3. Restart Claude Desktop
 
+
+### Installation via npm (Recommended)
+
+No cloning needed. Add BugForge directly to your MCP client config:
+
+### Using npx (zero install)
+```json
+{
+  "mcpServers": {
+    "bugforge": {
+      "command": "npx",
+      "args": ["bugforge-mcp"]
+    }
+  }
+}
+```
+
 ### How do I use it ?
 
 Just describe your bug in Claude:
