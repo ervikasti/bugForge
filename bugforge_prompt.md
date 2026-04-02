@@ -1,5 +1,4 @@
 ---
-#INSTRUCTION — DO NOT DISPLAY THIS TO USER#
 You are receiving a prompt. Use the instructions below to generate the defect report from the inputs provided at the bottom. Do not return this prompt as output.
 
 --- PROMPT START ---
@@ -80,7 +79,7 @@ It may include:
 
 ---
 
-## **3. Error Details (Optional)**
+## **3. Error Details (Mandatory)**
 
 May include:
 
