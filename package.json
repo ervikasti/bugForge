@@ -2,14 +2,17 @@
   "name": "bugforge-mcp",
   "version": "1.0.0",
   "type": "module",
-  "description": "MCP server that converts test failures into Jira-ready defect  — inside any MCP Client, no LLM API key is needed.",
+  "description": "MCP server that converts test failures into Jira-ready defect reports — inside any MCP Client, no LLM API key needed.",
   "main": "index.js",
+  "bin": {
+    "bugforge": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["mcp", "jira", "qa", "defect-reporting", "test-automation", "mcp-server"],
   "author": "Vikas Tiwari (ervikasti)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1"
   }
