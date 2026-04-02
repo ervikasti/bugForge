@@ -1,6 +1,8 @@
-# BugForge 
-An MCP server that auto-generates enterprise-grade Jira defect reports from your test scenario and error details.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![MCP](https://img.shields.io/badge/MCP-Compatible-blue)
+![npm](https://img.shields.io/badge/npm-ready-red)
 
+# BugForge 
 BugForge is an open-source MCP server for AI-powered QA defect reporting.
 
 Drop in your test scenario and error details — BugForge generates a complete 
@@ -10,6 +12,22 @@ template.json. Customize the format, tone, and fields to match your team's
 standards.
 
 Zero API key required. Works natively inside Claude.ai.
+
+**Missing folder structure**
+
+bugForge/
+├── src/
+│   └── index.js
+|── bugforge_prompt.md
+│── template.json
+├── package.json
+├── README.md
+└── LICENSE
+
+## Prerequisites
+- Node.js v18 or higher
+- Claude.ai account (Free or Pro)
+- Claude Desktop app
 
 1. How Does it work ?
 BugForge works inside LLM-connected MCP clients (like Claude.ai).
