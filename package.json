@@ -1,6 +1,6 @@
 {
   "name": "bugforge-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "MCP server that converts test failures into Jira-ready defect reports — inside any MCP Client, no LLM API key needed.",
   "main": "index.js",
