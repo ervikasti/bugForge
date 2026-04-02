@@ -140,8 +140,11 @@ If required information is missing:
 - Extract only values that are explicitly present in the title  
 - Do NOT infer, assume, or derive missing values  
 - If a field is not present, do not show in the output  
-- If all fields are missing skip Release & Environment Details section itself
-- Do NOT generate validation messages, warnings, or placeholders for missing fields  
+- Do NOT generate validation messages, warnings, or placeholders for missing fields
+- If ALL of Release Version, Environment, and Test Type are absent from the 
+  input, OMIT the entire "Release & Environment Details" section from output. 
+  Do NOT render the section header. Do NOT add any explanation or placeholder. 
+  The section must not appear at all.
 
 ---
 
