@@ -13,22 +13,23 @@ standards.
 
 Zero API key required. Works natively inside Claude.ai.
 
-**Missing folder structure**
-
+**Folder structure**
+```
 bugForge/
-├── src/
-│   └── index.js
-|── bugforge_prompt.md
-│── template.json
+├── index.js
+├── bugforge_prompt.md
+├── template.json
 ├── package.json
 ├── README.md
 └── LICENSE
+```
 
 ## Prerequisites
 - Node.js v18 or higher
 - Claude.ai account (Free or Pro)
 - Claude Desktop app
 
+## Working
 1. How Does it work ?
 BugForge works inside LLM-connected MCP clients (like Claude.ai).
 It assembles a structured prompt from your inputs — the host LLM 
@@ -41,15 +42,27 @@ npm install
 
 3. How do I connect it to Claude? 
 (User shall refer how there MCP client connect to MCP Server)
-// Add to your claude_desktop_config.json
-{
-  "mcpServers": {
-    "bugforge": {
-      "command": "node",
-      "args": ["/path/to/bugforge/src/index.js"]
+## How to Connect to Claude Desktop
+
+    1. Open your Claude Desktop config file:
+    
+       - **Mac:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+       - **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+    
+    2. Add BugForge under `mcpServers`:
+    
+    \```json
+    {
+      "mcpServers": {
+        "bugforge": {
+          "command": "node",
+          "args": ["/absolute/path/to/bugForge/src/index.js"]
+        }
+      }
     }
-  }
-}
+    \```
+    
+    3. Restart Claude Desktop
 
 4. How do I use it ?
 
