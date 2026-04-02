@@ -73,13 +73,10 @@ payment succeeds but order stays pending"
 
 BugForge will produce a Jira-ready report automatically.
 
-### The Customization Section (Differentiator of the project)
+### Customize for Your Project
 
-## Customize for Your Project
-```
-Edit bugforge_prompt.md to change the report format, tone, or rules.
-Edit template.json to add your environments, channels, or team-specific fields.
-```
+- Edit `bugforge_prompt.md` to change the report format, tone, or rules.
+- Edit `template.json` to add your environments, channels, or team-specific fields.
 
 BugForge is built to be adapted — make it yours.
 
